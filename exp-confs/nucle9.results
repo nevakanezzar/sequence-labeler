@@ -1,0 +1,106 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv,/home/skasewa/stuff/project/data/exp-data/train/nucle/conll13.tsv
+multiple :  9
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  1
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  50
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1.0
+opt_strategy :  adadelta
+max_batch_size :  96
+save :  /home/skasewa/stuff/project/models/downstream/nucle9.model
+load :  None
+random_seed :  420
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  12972
+n_chars :  66
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  6551754
+parameter_count_without_word_embeddings:  2660154
+EPOCH: 0
+learningrate: 1.0
+Epoch:0	mini-batch:0
+train_cost_avg: 1.13150598165
+train_cost_sum: 6767960.4595
+train_main_predicted_count: 705299
+train_main_total_count: 883471
+train_main_correct_count: 656904
+train_p: 0.931383711022
+train_r: 0.743549024246
+train_f: 0.826934043317
+train_f05: 0.886589806857
+train_accuracy: 0.954030294712
+train_token_count: 5981374
+train_time: 857.434572935
+dev_cost_avg: 1.70187859036
+dev_cost_sum: 58883.297348
+dev_main_predicted_count: 655
+dev_main_total_count: 4640
+dev_main_correct_count: 312
+dev_p: 0.476335877863
+dev_r: 0.0672413793103
+dev_f: 0.117847025496
+dev_f05: 0.214876033058
+dev_accuracy: 0.864996098153
+dev_token_count: 34599
+dev_time: 2.67003798485
+Saving...
+Epoch:0	mini-batch:1
+train_cost_avg: 1.44124369399
+train_cost_sum: 667625.875122
+train_main_predicted_count: 11061
+train_main_total_count: 60388
+train_main_correct_count: 7847
+train_p: 0.709429527168
+train_r: 0.12994303504
+train_f: 0.219653179191
+train_f05: 0.374980885389
+train_accuracy: 0.87963836461
+train_token_count: 463229
+train_time: 75.8623158932
+dev_cost_avg: 1.37049877718
+dev_cost_sum: 47417.8871918
+dev_main_predicted_count: 545
+dev_main_total_count: 4640
+dev_main_correct_count: 445
+dev_p: 0.816513761468
+dev_r: 0.0959051724138
+dev_f: 0.171648987464
+dev_f05: 0.326246334311
+dev_accuracy: 0.875863464262
+dev_token_count: 34599
+dev_time: 2.76373720169
+Saving...
+
+END OF EPOCH
+
+best_epoch and minibatch: 0-1
+EPOCH: 1
+learningrate: 1.0
+Epoch:1	mini-batch:0
+('Unexpected error:', <type 'exceptions.MemoryError'>)
+Caught exception, exiting training, attempting to run tests...
+Loading best model and running tests...

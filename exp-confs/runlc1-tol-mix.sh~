@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export CODE='lc1-tol'
+export THEANO_FLAGS='device=gpu1,floatX=float32'
+python ../sequence-labeler-master/v2_sle_mixeddata.py ${CODE}1-mix5.conf > ${CODE}1-mix5.results
+python ../sequence-labeler-master/v2_sle_mixeddata.py ${CODE}3-mix5.conf > ${CODE}3-mix5.results
+python ../sequence-labeler-master/v2_sle_mixeddata.py ${CODE}5-mix5.conf > ${CODE}5-mix5.results

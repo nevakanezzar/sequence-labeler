@@ -1,0 +1,134 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv,/cluster/project2/mr/skasewa/models/s2s-fce/corruptions/fce-15-tol10.tsv
+multiple :  1.5
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  2
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  50
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1.0
+opt_strategy :  adadelta
+max_batch_size :  512
+save :  /home/skasewa/stuff/project/models/downstream/fce-tol10-6.model
+load :  None
+random_seed :  420
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  12151
+n_chars :  64
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  6305354
+parameter_count_without_word_embeddings:  2660054
+EPOCH: 0
+learningrate: 1.0
+Epoch:0	mini-batch:0
+train_cost_avg: 1.8276315928
+train_cost_sum: 2347848.64938
+train_main_predicted_count: 8704
+train_main_total_count: 82685
+train_main_correct_count: 512
+train_p: 0.0588235294118
+train_r: 0.00619217512245
+train_f: 0.011204849599
+train_f05: 0.0217870486209
+train_accuracy: 0.929657335907
+train_token_count: 1284640
+train_time: 153.645831823
+dev_cost_avg: 1.76336393117
+dev_cost_sum: 61010.6286545
+dev_main_predicted_count: 0
+dev_main_total_count: 4640
+dev_main_correct_count: 0
+dev_p: 0.0
+dev_r: 0.0
+dev_f: 0.0
+dev_f05: 0.0
+dev_accuracy: 0.865892077806
+dev_token_count: 34599
+dev_time: 2.36850190163
+Saving...
+Epoch:0	mini-batch:1
+('Unexpected error:', <type 'exceptions.RuntimeError'>)
+Caught exception, exiting training, attempting to run tests...
+Loading best model and running tests...
+test0_cost_avg: 1.76336393117
+test0_cost_sum: 61010.6286545
+test0_main_predicted_count: 0
+test0_main_total_count: 4640
+test0_main_correct_count: 0
+test0_p: 0.0
+test0_r: 0.0
+test0_f: 0.0
+test0_f05: 0.0
+test0_accuracy: 0.865892077806
+test0_token_count: 34599
+test0_time: 2.66514205933
+test1_cost_avg: 1.91212477083
+test1_cost_sum: 79309.1991196
+test1_main_predicted_count: 0
+test1_main_total_count: 6305
+test1_main_correct_count: 0
+test1_p: 0.0
+test1_r: 0.0
+test1_f: 0.0
+test1_f05: 0.0
+test1_accuracy: 0.847988041565
+test1_token_count: 41477
+test1_time: 3.07535886765
+test2_cost_avg: 1.89418433476
+test2_cost_sum: 57098.292587
+test2_main_predicted_count: 0
+test2_main_total_count: 2992
+test2_main_correct_count: 0
+test2_p: 0.0
+test2_r: 0.0
+test2_f: 0.0
+test2_f05: 0.0
+test2_accuracy: 0.900743099788
+test2_token_count: 30144
+test2_time: 2.41657495499
+test3_cost_avg: 2.00556165148
+test3_cost_sum: 60455.6504221
+test3_main_predicted_count: 0
+test3_main_total_count: 4199
+test3_main_correct_count: 0
+test3_p: 0.0
+test3_r: 0.0
+test3_f: 0.0
+test3_f05: 0.0
+test3_accuracy: 0.860701963907
+test3_token_count: 30144
+test3_time: 2.70138692856
+test4_cost_avg: 2.15035037496
+test4_cost_sum: 147898.948439
+test4_main_predicted_count: 0
+test4_main_total_count: 15288
+test4_main_correct_count: 0
+test4_p: 0.0
+test4_r: 0.0
+test4_f: 0.0
+test4_f05: 0.0
+test4_accuracy: 0.777722851452
+test4_token_count: 68779
+test4_time: 4.10588002205

@@ -1,0 +1,820 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv,/home/skasewa/stuff/project/data/exp-data/train/wiki-roman/wrsc-b.tsv
+multiple :  0.4285
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  1
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  50
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1.0
+opt_strategy :  adadelta
+max_batch_size :  256
+save :  /home/skasewa/stuff/project/models/downstream/b3.model
+load :  None
+random_seed :  543
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  12919
+n_chars :  67
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  6535904
+parameter_count_without_word_embeddings:  2660204
+EPOCH: 0
+learningrate: 1.0
+Epoch:0	mini-batch:0
+train_cost_avg: 2.07102702908
+train_cost_sum: 1324618.53267
+train_main_predicted_count: 2991
+train_main_total_count: 93705
+train_main_correct_count: 404
+train_p: 0.135071882314
+train_r: 0.00431140280668
+train_f: 0.00835608505005
+train_f05: 0.0191162971165
+train_accuracy: 0.850080128832
+train_token_count: 639595
+train_time: 78.3456320763
+dev_cost_avg: 1.73556973575
+dev_cost_sum: 60048.9772873
+dev_main_predicted_count: 0
+dev_main_total_count: 4640
+dev_main_correct_count: 0
+dev_p: 0.0
+dev_r: 0.0
+dev_f: 0.0
+dev_f05: 0.0
+dev_accuracy: 0.865892077806
+dev_token_count: 34599
+dev_time: 2.21117210388
+Saving...
+Epoch:0	mini-batch:1
+train_cost_avg: 1.67223769613
+train_cost_sum: 1055489.67799
+train_main_predicted_count: 13561
+train_main_total_count: 98126
+train_main_correct_count: 7857
+train_p: 0.579382051471
+train_r: 0.0800705215743
+train_f: 0.140696768648
+train_f05: 0.257826343768
+train_accuracy: 0.847947666608
+train_token_count: 631184
+train_time: 77.0006761551
+dev_cost_avg: 1.54575476457
+dev_cost_sum: 53481.5690994
+dev_main_predicted_count: 401
+dev_main_total_count: 4640
+dev_main_correct_count: 298
+dev_p: 0.743142144638
+dev_r: 0.064224137931
+dev_f: 0.118230509819
+dev_f05: 0.238629083921
+dev_accuracy: 0.871528078846
+dev_token_count: 34599
+dev_time: 2.19716215134
+Saving...
+Epoch:0	mini-batch:2
+train_cost_avg: 1.45366149029
+train_cost_sum: 728528.621763
+train_main_predicted_count: 13858
+train_main_total_count: 69154
+train_main_correct_count: 9830
+train_p: 0.709337566748
+train_r: 0.142146513578
+train_f: 0.236833228931
+train_f05: 0.394506605879
+train_accuracy: 0.873591290745
+train_token_count: 501168
+train_time: 63.2034919262
+dev_cost_avg: 1.36994375731
+dev_cost_sum: 47398.6840591
+dev_main_predicted_count: 883
+dev_main_total_count: 4640
+dev_main_correct_count: 646
+dev_p: 0.731596828992
+dev_r: 0.139224137931
+dev_f: 0.233930834691
+dev_f05: 0.395252080274
+dev_accuracy: 0.877713228706
+dev_token_count: 34599
+dev_time: 2.22097206116
+Saving...
+
+END OF EPOCH
+
+best_epoch and minibatch: 0-2
+EPOCH: 1
+learningrate: 1.0
+Epoch:1	mini-batch:0
+train_cost_avg: 1.43288615778
+train_cost_sum: 916466.822083
+train_main_predicted_count: 23791
+train_main_total_count: 93705
+train_main_correct_count: 17011
+train_p: 0.715018284225
+train_r: 0.181537804813
+train_f: 0.289558793491
+train_f05: 0.450338594476
+train_accuracy: 0.869489286189
+train_token_count: 639595
+train_time: 76.4351890087
+dev_cost_avg: 1.32025756523
+dev_cost_sum: 45679.5914993
+dev_main_predicted_count: 972
+dev_main_total_count: 4640
+dev_main_correct_count: 713
+dev_p: 0.73353909465
+dev_r: 0.153663793103
+dev_f: 0.254098360656
+dev_f05: 0.418034709193
+dev_accuracy: 0.879013844331
+dev_token_count: 34599
+dev_time: 2.31026291847
+Saving...
+Epoch:1	mini-batch:1
+train_cost_avg: 1.3954698673
+train_cost_sum: 880798.25272
+train_main_predicted_count: 33622
+train_main_total_count: 98126
+train_main_correct_count: 24366
+train_p: 0.724704062816
+train_r: 0.248313392985
+train_f: 0.369887967939
+train_f05: 0.523743196884
+train_accuracy: 0.868475753505
+train_token_count: 631184
+train_time: 77.6999459267
+dev_cost_avg: 1.29121393766
+dev_cost_sum: 44674.7110291
+dev_main_predicted_count: 1446
+dev_main_total_count: 4640
+dev_main_correct_count: 959
+dev_p: 0.663208852006
+dev_r: 0.206681034483
+dev_f: 0.315149523497
+dev_f05: 0.459996162701
+dev_accuracy: 0.879534090581
+dev_token_count: 34599
+dev_time: 2.31279301643
+Saving...
+Epoch:1	mini-batch:2
+train_cost_avg: 1.28414077965
+train_cost_sum: 643570.266256
+train_main_predicted_count: 23212
+train_main_total_count: 69154
+train_main_correct_count: 17509
+train_p: 0.754308116491
+train_r: 0.253188535732
+train_f: 0.379122187818
+train_f05: 0.54039456303
+train_accuracy: 0.885571305431
+train_token_count: 501168
+train_time: 62.2455909252
+dev_cost_avg: 1.25444422562
+dev_cost_sum: 43402.5157623
+dev_main_predicted_count: 1559
+dev_main_total_count: 4640
+dev_main_correct_count: 1082
+dev_p: 0.694034637588
+dev_r: 0.233189655172
+dev_f: 0.349088562671
+dev_f05: 0.49742552409
+dev_accuracy: 0.883378132316
+dev_token_count: 34599
+dev_time: 2.31784892082
+Saving...
+
+END OF EPOCH
+
+best_epoch and minibatch: 1-2
+EPOCH: 2
+learningrate: 1.0
+Epoch:2	mini-batch:0
+train_cost_avg: 1.31942713956
+train_cost_sum: 843899.001328
+train_main_predicted_count: 35151
+train_main_total_count: 93705
+train_main_correct_count: 25765
+train_p: 0.732980569543
+train_r: 0.274958646817
+train_f: 0.399903768548
+train_f05: 0.549808159311
+train_accuracy: 0.879101618993
+train_token_count: 639595
+train_time: 78.1784660816
+dev_cost_avg: 1.25644694753
+dev_cost_sum: 43471.8079376
+dev_main_predicted_count: 1645
+dev_main_total_count: 4640
+dev_main_correct_count: 1078
+dev_p: 0.655319148936
+dev_r: 0.232327586207
+dev_f: 0.343038981702
+dev_f05: 0.480392156863
+dev_accuracy: 0.880661290789
+dev_token_count: 34599
+dev_time: 2.37460803986
+Epoch:2	mini-batch:1
+train_cost_avg: 1.31006378081
+train_cost_sum: 826891.297424
+train_main_predicted_count: 43416
+train_main_total_count: 98126
+train_main_correct_count: 32162
+train_p: 0.740786806707
+train_r: 0.327762264843
+train_f: 0.454451682186
+train_f05: 0.591670039369
+train_accuracy: 0.877661664427
+train_token_count: 631184
+train_time: 76.3728239536
+dev_cost_avg: 1.24387902667
+dev_cost_sum: 43036.9704437
+dev_main_predicted_count: 1957
+dev_main_total_count: 4640
+dev_main_correct_count: 1260
+dev_p: 0.643842616249
+dev_r: 0.271551724138
+dev_f: 0.381991814461
+dev_f05: 0.505293551492
+dev_accuracy: 0.8821642244
+dev_token_count: 34599
+dev_time: 2.37677907944
+Saving...
+Epoch:2	mini-batch:2
+train_cost_avg: 1.21109744377
+train_cost_sum: 606963.283697
+train_main_predicted_count: 30619
+train_main_total_count: 69154
+train_main_correct_count: 23257
+train_p: 0.75956105686
+train_r: 0.336307371952
+train_f: 0.466198270073
+train_f05: 0.606820435214
+train_accuracy: 0.893730246145
+train_token_count: 501168
+train_time: 63.5129308701
+dev_cost_avg: 1.2222654781
+dev_cost_sum: 42289.1632767
+dev_main_predicted_count: 1559
+dev_main_total_count: 4640
+dev_main_correct_count: 1114
+dev_p: 0.714560615779
+dev_r: 0.240086206897
+dev_f: 0.359412808518
+dev_f05: 0.512136815006
+dev_accuracy: 0.88522789676
+dev_token_count: 34599
+dev_time: 2.5533220768
+Saving...
+
+END OF EPOCH
+
+best_epoch and minibatch: 2-2
+EPOCH: 3
+learningrate: 1.0
+Epoch:3	mini-batch:0
+train_cost_avg: 1.26327920512
+train_cost_sum: 807987.063196
+train_main_predicted_count: 43154
+train_main_total_count: 93705
+train_main_correct_count: 32047
+train_p: 0.742619455902
+train_r: 0.341998826103
+train_f: 0.468321411087
+train_f05: 0.60166115327
+train_accuracy: 0.886232694127
+train_token_count: 639595
+train_time: 77.3231639862
+dev_cost_avg: 1.21467369084
+dev_cost_sum: 42026.4950294
+dev_main_predicted_count: 2307
+dev_main_total_count: 4640
+dev_main_correct_count: 1443
+dev_p: 0.625487646294
+dev_r: 0.31099137931
+dev_f: 0.415431121347
+dev_f05: 0.520262474762
+dev_accuracy: 0.882626665511
+dev_token_count: 34599
+dev_time: 2.50145697594
+Saving...
+Epoch:3	mini-batch:1
+train_cost_avg: 1.25840590244
+train_cost_sum: 794285.671127
+train_main_predicted_count: 51428
+train_main_total_count: 98126
+train_main_correct_count: 38555
+train_p: 0.749688885432
+train_r: 0.392913193241
+train_f: 0.51559971649
+train_f05: 0.634466393275
+train_accuracy: 0.885225227509
+train_token_count: 631184
+train_time: 77.6140830517
+dev_cost_avg: 1.21699073955
+dev_cost_sum: 42106.6625977
+dev_main_predicted_count: 1689
+dev_main_total_count: 4640
+dev_main_correct_count: 1161
+dev_p: 0.687388987567
+dev_r: 0.250215517241
+dev_f: 0.366882603887
+dev_f05: 0.509389259389
+dev_accuracy: 0.88418740426
+dev_token_count: 34599
+dev_time: 2.3039791584
+Epoch:3	mini-batch:2
+train_cost_avg: 1.16495507753
+train_cost_sum: 583838.206293
+train_main_predicted_count: 36431
+train_main_total_count: 69154
+train_main_correct_count: 28115
+train_p: 0.771732864868
+train_r: 0.40655638141
+train_f: 0.532556707866
+train_f05: 0.654208434554
+train_accuracy: 0.901520049165
+train_token_count: 501168
+train_time: 61.6484241486
+dev_cost_avg: 1.2119293429
+dev_cost_sum: 41931.543335
+dev_main_predicted_count: 1994
+dev_main_total_count: 4640
+dev_main_correct_count: 1312
+dev_p: 0.657973921765
+dev_r: 0.28275862069
+dev_f: 0.395538136871
+dev_f05: 0.519974635384
+dev_accuracy: 0.884100696552
+dev_token_count: 34599
+dev_time: 2.30748796463
+
+END OF EPOCH
+
+best_epoch and minibatch: 3-0
+EPOCH: 4
+learningrate: 1.0
+Epoch:4	mini-batch:0
+train_cost_avg: 1.22421965883
+train_cost_sum: 783004.772688
+train_main_predicted_count: 50076
+train_main_total_count: 93705
+train_main_correct_count: 37659
+train_p: 0.752036903906
+train_r: 0.401888906675
+train_f: 0.523838337472
+train_f05: 0.64043957838
+train_accuracy: 0.892958825507
+train_token_count: 639595
+train_time: 79.0484030247
+dev_cost_avg: 1.20781753519
+dev_cost_sum: 41789.2789001
+dev_main_predicted_count: 2018
+dev_main_total_count: 4640
+dev_main_correct_count: 1331
+dev_p: 0.659563924678
+dev_r: 0.286853448276
+dev_f: 0.399819765695
+dev_f05: 0.523521082442
+dev_accuracy: 0.884505332524
+dev_token_count: 34599
+dev_time: 2.31054997444
+Saving...
+Epoch:4	mini-batch:1
+train_cost_avg: 1.22256615483
+train_cost_sum: 771664.195869
+train_main_predicted_count: 57697
+train_main_total_count: 98126
+train_main_correct_count: 44032
+train_p: 0.763159263047
+train_r: 0.448729184926
+train_f: 0.565154052996
+train_f05: 0.6693542993
+train_accuracy: 0.892647785749
+train_token_count: 631184
+train_time: 76.110213995
+dev_cost_avg: 1.21247390072
+dev_cost_sum: 41950.384491
+dev_main_predicted_count: 1762
+dev_main_total_count: 4640
+dev_main_correct_count: 1220
+dev_p: 0.692395005675
+dev_r: 0.262931034483
+dev_f: 0.381130896595
+dev_f05: 0.521902806297
+dev_accuracy: 0.885488019885
+dev_token_count: 34599
+dev_time: 2.27403187752
+Epoch:4	mini-batch:2
+train_cost_avg: 1.13071435033
+train_cost_sum: 566677.849527
+train_main_predicted_count: 41322
+train_main_total_count: 69154
+train_main_correct_count: 32228
+train_p: 0.779923527419
+train_r: 0.466032333632
+train_f: 0.583438936964
+train_f05: 0.687334180736
+train_accuracy: 0.908174504358
+train_token_count: 501168
+train_time: 63.5610880852
+dev_cost_avg: 1.20803304051
+dev_cost_sum: 41796.7351685
+dev_main_predicted_count: 2796
+dev_main_total_count: 4640
+dev_main_correct_count: 1674
+dev_p: 0.598712446352
+dev_r: 0.360775862069
+dev_f: 0.450242065627
+dev_f05: 0.528943377149
+dev_accuracy: 0.881846296136
+dev_token_count: 34599
+dev_time: 2.16673898697
+Saving...
+
+END OF EPOCH
+
+best_epoch and minibatch: 4-2
+EPOCH: 5
+learningrate: 1.0
+Epoch:5	mini-batch:0
+train_cost_avg: 1.19598004657
+train_cost_sum: 764942.857883
+train_main_predicted_count: 55524
+train_main_total_count: 93705
+train_main_correct_count: 42385
+train_p: 0.763363590519
+train_r: 0.452323782082
+train_f: 0.568053126403
+train_f05: 0.671071339229
+train_accuracy: 0.899219037047
+train_token_count: 639595
+train_time: 76.8170719147
+dev_cost_avg: 1.20692233989
+dev_cost_sum: 41758.3060379
+dev_main_predicted_count: 2164
+dev_main_total_count: 4640
+dev_main_correct_count: 1420
+dev_p: 0.656192236599
+dev_r: 0.306034482759
+dev_f: 0.417401528513
+dev_f05: 0.533995186522
+dev_accuracy: 0.885430214746
+dev_token_count: 34599
+dev_time: 2.16811084747
+Saving...
+Epoch:5	mini-batch:1
+train_cost_avg: 1.19399660788
+train_cost_sum: 753631.554951
+train_main_predicted_count: 62858
+train_main_total_count: 98126
+train_main_correct_count: 48815
+train_p: 0.776591682841
+train_r: 0.497472637222
+train_f: 0.606457784625
+train_f05: 0.698238918863
+train_accuracy: 0.899626733251
+train_token_count: 631184
+train_time: 78.0105540752
+dev_cost_avg: 1.21482091716
+dev_cost_sum: 42031.588913
+dev_main_predicted_count: 2196
+dev_main_total_count: 4640
+dev_main_correct_count: 1409
+dev_p: 0.641621129326
+dev_r: 0.303663793103
+dev_f: 0.412229373903
+dev_f05: 0.524806317044
+dev_accuracy: 0.883869475996
+dev_token_count: 34599
+dev_time: 2.35802698135
+Epoch:5	mini-batch:2
+train_cost_avg: 1.10261396309
+train_cost_sum: 552594.834654
+train_main_predicted_count: 45220
+train_main_total_count: 69154
+train_main_correct_count: 36023
+train_p: 0.796616541353
+train_r: 0.520909853371
+train_f: 0.629915889975
+train_f05: 0.720362030764
+train_accuracy: 0.915541295534
+train_token_count: 501168
+train_time: 61.9764630795
+dev_cost_avg: 1.21303336628
+dev_cost_sum: 41969.7414398
+dev_main_predicted_count: 2611
+dev_main_total_count: 4640
+dev_main_correct_count: 1575
+dev_p: 0.603217158177
+dev_r: 0.339439655172
+dev_f: 0.434422838229
+dev_f05: 0.522076372315
+dev_accuracy: 0.881470562733
+dev_token_count: 34599
+dev_time: 2.18444681168
+
+END OF EPOCH
+
+best_epoch and minibatch: 5-0
+EPOCH: 6
+learningrate: 1.0
+Epoch:6	mini-batch:0
+train_cost_avg: 1.17249357597
+train_cost_sum: 749921.028723
+train_main_predicted_count: 60073
+train_main_total_count: 93705
+train_main_correct_count: 46607
+train_p: 0.775839395402
+train_r: 0.49738007577
+train_f: 0.606159528671
+train_f05: 0.697715847747
+train_accuracy: 0.905308828243
+train_token_count: 639595
+train_time: 77.5545930862
+dev_cost_avg: 1.20951617063
+dev_cost_sum: 41848.0499878
+dev_main_predicted_count: 2682
+dev_main_total_count: 4640
+dev_main_correct_count: 1606
+dev_p: 0.598806860552
+dev_r: 0.346120689655
+dev_f: 0.438677956842
+dev_f05: 0.522514315461
+dev_accuracy: 0.881210439608
+dev_token_count: 34599
+dev_time: 2.35005402565
+Epoch:6	mini-batch:1
+train_cost_avg: 1.17489315553
+train_cost_sum: 741573.761478
+train_main_predicted_count: 67076
+train_main_total_count: 98126
+train_main_correct_count: 52369
+train_p: 0.780741248733
+train_r: 0.533691376394
+train_f: 0.633999588383
+train_f05: 0.714583958737
+train_accuracy: 0.904205429795
+train_token_count: 631184
+train_time: 76.110170126
+dev_cost_avg: 1.23321803437
+dev_cost_sum: 42668.1107712
+dev_main_predicted_count: 1948
+dev_main_total_count: 4640
+dev_main_correct_count: 1293
+dev_p: 0.663757700205
+dev_r: 0.278663793103
+dev_f: 0.392531876138
+dev_f05: 0.520028957529
+dev_accuracy: 0.884331917107
+dev_token_count: 34599
+dev_time: 2.28178501129
+Epoch:6	mini-batch:2
+train_cost_avg: 1.07762744135
+train_cost_sum: 540072.389528
+train_main_predicted_count: 48457
+train_main_total_count: 69154
+train_main_correct_count: 39270
+train_p: 0.810409228801
+train_r: 0.567863030338
+train_f: 0.667794679069
+train_f05: 0.746629046855
+train_accuracy: 0.922040114293
+train_token_count: 501168
+train_time: 62.9881670475
+dev_cost_avg: 1.22701722517
+dev_cost_sum: 42453.5689735
+dev_main_predicted_count: 2627
+dev_main_total_count: 4640
+dev_main_correct_count: 1605
+dev_p: 0.610963075752
+dev_r: 0.345905172414
+dev_f: 0.44172285675
+dev_f05: 0.529772907314
+dev_accuracy: 0.882742275788
+dev_token_count: 34599
+dev_time: 2.28682994843
+
+END OF EPOCH
+
+best_epoch and minibatch: 5-0
+EPOCH: 7
+learningrate: 1.0
+Epoch:7	mini-batch:0
+train_cost_avg: 1.15421426121
+train_cost_sum: 738229.670397
+train_main_predicted_count: 63930
+train_main_total_count: 93705
+train_main_correct_count: 49959
+train_p: 0.781464101361
+train_r: 0.533151912918
+train_f: 0.633856694262
+train_f05: 0.714874436574
+train_accuracy: 0.909760082552
+train_token_count: 639595
+train_time: 76.4140050411
+dev_cost_avg: 1.22823992136
+dev_cost_sum: 42495.8730392
+dev_main_predicted_count: 2150
+dev_main_total_count: 4640
+dev_main_correct_count: 1388
+dev_p: 0.645581395349
+dev_r: 0.299137931034
+dev_f: 0.4088365243
+dev_f05: 0.52416918429
+dev_accuracy: 0.883985086274
+dev_token_count: 34599
+dev_time: 2.15951299667
+Epoch:7	mini-batch:1
+train_cost_avg: 1.15413306892
+train_cost_sum: 728470.326971
+train_main_predicted_count: 70333
+train_main_total_count: 98126
+train_main_correct_count: 55842
+train_p: 0.793965848179
+train_r: 0.569084646271
+train_f: 0.662974373586
+train_f05: 0.735812659109
+train_accuracy: 0.910050001267
+train_token_count: 631184
+train_time: 76.7811830044
+dev_cost_avg: 1.22332384286
+dev_cost_sum: 42325.7816391
+dev_main_predicted_count: 3151
+dev_main_total_count: 4640
+dev_main_correct_count: 1785
+dev_p: 0.566486829578
+dev_r: 0.384698275862
+dev_f: 0.458221024259
+dev_f05: 0.517571329158
+dev_accuracy: 0.8780022544
+dev_token_count: 34599
+dev_time: 2.32794904709
+Epoch:7	mini-batch:2
+train_cost_avg: 1.06070920915
+train_cost_sum: 531593.512934
+train_main_predicted_count: 51416
+train_main_total_count: 69154
+train_main_correct_count: 41859
+train_p: 0.814124008091
+train_r: 0.605301211788
+train_f: 0.694351828813
+train_f05: 0.761576752614
+train_accuracy: 0.926467771286
+train_token_count: 501168
+train_time: 61.3323669434
+dev_cost_avg: 1.29422402013
+dev_cost_sum: 44778.8568726
+dev_main_predicted_count: 1569
+dev_main_total_count: 4640
+dev_main_correct_count: 1111
+dev_p: 0.708094327597
+dev_r: 0.239439655172
+dev_f: 0.357867611532
+dev_f05: 0.508886038842
+dev_accuracy: 0.884765455649
+dev_token_count: 34599
+dev_time: 2.27122688293
+
+END OF EPOCH
+
+best_epoch and minibatch: 5-0
+EPOCH: 8
+learningrate: 1.0
+Epoch:8	mini-batch:0
+train_cost_avg: 1.13781236213
+train_cost_sum: 727739.097754
+train_main_predicted_count: 66395
+train_main_total_count: 93705
+train_main_correct_count: 52743
+train_p: 0.794382107086
+train_r: 0.562862173843
+train_f: 0.658875702686
+train_f05: 0.733999471172
+train_accuracy: 0.914611590147
+train_token_count: 639595
+train_time: 78.1017010212
+dev_cost_avg: 1.23535458259
+dev_cost_sum: 42742.0332031
+dev_main_predicted_count: 2590
+dev_main_total_count: 4640
+dev_main_correct_count: 1586
+dev_p: 0.612355212355
+dev_r: 0.341810344828
+dev_f: 0.438727524205
+dev_f05: 0.528666666667
+dev_accuracy: 0.882713373219
+dev_token_count: 34599
+dev_time: 2.4134619236
+Epoch:8	mini-batch:1
+train_cost_avg: 1.13778652888
+train_cost_sum: 718152.652443
+train_main_predicted_count: 72782
+train_main_total_count: 98126
+train_main_correct_count: 58669
+train_p: 0.806092165645
+train_r: 0.59789454375
+train_f: 0.686556509935
+train_f05: 0.753608183859
+train_accuracy: 0.915127759893
+train_token_count: 631184
+train_time: 76.0734319687
+dev_cost_avg: 1.2344834208
+dev_cost_sum: 42711.8918762
+dev_main_predicted_count: 2983
+dev_main_total_count: 4640
+dev_main_correct_count: 1727
+dev_p: 0.578947368421
+dev_r: 0.372198275862
+dev_f: 0.453102453102
+dev_f05: 0.521059618634
+dev_accuracy: 0.879505188011
+dev_token_count: 34599
+dev_time: 2.35650706291
+No improvement within epoch for some time, end of training...
+
+END OF EPOCH
+
+best_epoch and minibatch: 5-0
+Loading best model and running tests...
+test0_cost_avg: 1.20692233989
+test0_cost_sum: 41758.3060379
+test0_main_predicted_count: 2164
+test0_main_total_count: 4640
+test0_main_correct_count: 1420
+test0_p: 0.656192236599
+test0_r: 0.306034482759
+test0_f: 0.417401528513
+test0_f05: 0.533995186522
+test0_accuracy: 0.885430214746
+test0_token_count: 34599
+test0_time: 2.53113913536
+test1_cost_avg: 1.43887588654
+test1_cost_sum: 59680.255146
+test1_main_predicted_count: 3349
+test1_main_total_count: 6305
+test1_main_correct_count: 1839
+test1_p: 0.549119140042
+test1_r: 0.291673275178
+test1_f: 0.380981976383
+test1_f05: 0.46672757728
+test1_accuracy: 0.855920148516
+test1_token_count: 41477
+test1_time: 3.1202878952
+test2_cost_avg: 1.78518090956
+test2_cost_sum: 53812.4933376
+test2_main_predicted_count: 3663
+test2_main_total_count: 2992
+test2_main_correct_count: 636
+test2_p: 0.173628173628
+test2_r: 0.21256684492
+test2_f: 0.191134485349
+test2_f05: 0.180231240082
+test2_accuracy: 0.821423832272
+test2_token_count: 30144
+test2_time: 2.65618014336
+test3_cost_avg: 1.80878308789
+test3_cost_sum: 54523.9574013
+test3_main_predicted_count: 3663
+test3_main_total_count: 4199
+test3_main_correct_count: 959
+test3_p: 0.261807261807
+test3_r: 0.22838771136
+test3_f: 0.243958280336
+test3_f05: 0.254363163758
+test3_accuracy: 0.802813163482
+test3_token_count: 30144
+test3_time: 2.71481800079
+test4_cost_avg: 1.99016505259
+test4_cost_sum: 136881.562152
+test4_main_predicted_count: 10317
+test4_main_total_count: 15288
+test4_main_correct_count: 3639
+test4_p: 0.352718813609
+test4_r: 0.238029827316
+test4_f: 0.28424135911
+test4_f05: 0.32171652875
+test4_accuracy: 0.733537853124
+test4_token_count: 68779
+test4_time: 4.15259790421

@@ -6,13 +6,9 @@ import math
 import gc
 import os
 import re
+import ConfigParser
 import theano
 import time
-
-try:
-    import ConfigParser as configparser
-except:
-    import configparser
 
 from sequence_labeler import SequenceLabeler
 from sequence_labeling_evaluator import SequenceLabelingEvaluator
@@ -40,7 +36,7 @@ def read_input_files(file_paths):
                     sentences.append((words, labels))
                     words, labels = [], []
             if len(words) > 0:
-                raise ValueError("The format expects an empty line at the end of the file in: " + str(file_path))
+                raise ValueError("The format expects an empty line at the end of the file in: " + file_path)
     return sentences
 
 
@@ -129,7 +125,7 @@ def process_sentences(sequencelabeler, sentences, testing, learningrate, name, m
         else:
             cost, predicted_labels = sequencelabeler.train(word_ids, char_ids, char_mask, label_ids, learningrate)
         evaluator.append_data(cost, predicted_labels, word_ids, label_ids)
-
+        
         word_ids, char_ids, char_mask, label_ids = None, None, None, None
         while config["garbage_collection"] == True and gc.collect() > 0:
             pass
@@ -137,7 +133,7 @@ def process_sentences(sequencelabeler, sentences, testing, learningrate, name, m
     results = evaluator.get_results(name)
     if verbose == True:
         for key in results:
-            print(key + ": " + str(results[key]))
+            print key + ": " + str(results[key])
     return results
 
 
@@ -157,7 +153,7 @@ def parse_config(config_section, config_path):
     Reads configuration from the file and returns a dictionary.
     Tries to guess the correct datatype for each of the config values.
     """
-    config_parser = configparser.SafeConfigParser(allow_no_value=True)
+    config_parser = ConfigParser.SafeConfigParser(allow_no_value=True)
     config_parser.read(config_path)
     config = collections.OrderedDict()
     for key, value in config_parser.items(config_section):
@@ -244,6 +240,7 @@ def preload_embeddings(word2id, embedding_size, embedding_path, embedding_matrix
     """
     Load embeddings from a file.
     """
+
     with open(embedding_path) as f:
         for line in f:
             line_parts = line.strip().split()
@@ -310,9 +307,9 @@ def run_experiment(config_path):
 
     # printing config
     for key, val in config.items():
-        print(str(key) + ": " + str(val))
-    print("parameter_count: " + str(sequencelabeler.get_parameter_count()))
-    print("parameter_count_without_word_embeddings: " + str(sequencelabeler.get_parameter_count_without_word_embeddings()))
+        print key, ": ", val
+    print "parameter_count: ", sequencelabeler.get_parameter_count()
+    print "parameter_count_without_word_embeddings: ", sequencelabeler.get_parameter_count_without_word_embeddings()
 
     config["word2id"] = word2id
     config["char2id"] = char2id
@@ -325,7 +322,7 @@ def run_experiment(config_path):
     if config["path_train"] is not None and len(config["path_train"]) > 0:
         best_selector_value = 0.0
         learningrate = config["learningrate"]
-        for epoch in range(config["epochs"]):
+        for epoch in xrange(config["epochs"]):
             print("EPOCH: " + str(epoch))
             print("learningrate: " + str(learningrate))
             random.shuffle(sentences_train)

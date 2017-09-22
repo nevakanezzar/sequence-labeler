@@ -1,0 +1,152 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv,/cluster/project2/mr/skasewa/models/all-1layer/corruptions/swikic-162007.tsv
+multiple :  0.25
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  1
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  50
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1.0
+opt_strategy :  adadelta
+max_batch_size :  256
+save :  /home/skasewa/stuff/project/models/downstream/swikic2.model
+load :  None
+random_seed :  420
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  147299
+n_chars :  168
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  46854954
+parameter_count_without_word_embeddings:  2665254
+EPOCH: 0
+learningrate: 1.0
+Epoch:0	mini-batch:0
+train_cost_avg: 2.01566900787
+train_cost_sum: 1133610.23436
+train_main_predicted_count: 7914
+train_main_total_count: 73093
+train_main_correct_count: 1022
+train_p: 0.129138236037
+train_r: 0.0139821870767
+train_f: 0.0252323873246
+train_f05: 0.0487832819406
+train_accuracy: 0.859596123037
+train_token_count: 562399
+train_time: 85.0270488262
+dev_cost_avg: 1.69877402239
+dev_cost_sum: 58775.8824005
+dev_main_predicted_count: 19
+dev_main_total_count: 4640
+dev_main_correct_count: 19
+dev_p: 1.0
+dev_r: 0.00409482758621
+dev_f: 0.00815625670745
+dev_f05: 0.0201441899915
+dev_accuracy: 0.866441226625
+dev_token_count: 34599
+dev_time: 2.81896710396
+Saving...
+Epoch:0	mini-batch:1
+train_cost_avg: 1.61156691544
+train_cost_sum: 907434.652481
+train_main_predicted_count: 7654
+train_main_total_count: 72937
+train_main_correct_count: 5134
+train_p: 0.670760386726
+train_r: 0.0703895142383
+train_f: 0.127408767728
+train_f05: 0.24789238361
+train_accuracy: 0.875109221491
+train_token_count: 563076
+train_time: 93.3640229702
+dev_cost_avg: 1.47242959718
+dev_cost_sum: 50944.5916328
+dev_main_predicted_count: 736
+dev_main_total_count: 4640
+dev_main_correct_count: 573
+dev_p: 0.778532608696
+dev_r: 0.12349137931
+dev_f: 0.213169642857
+dev_f05: 0.377768987342
+dev_accuracy: 0.877742131275
+dev_token_count: 34599
+dev_time: 3.2482790947
+Saving...
+Epoch:0	mini-batch:2
+train_cost_avg: 1.47160131846
+train_cost_sum: 830184.752991
+train_main_predicted_count: 12928
+train_main_total_count: 73389
+train_main_correct_count: 9279
+train_p: 0.717744430693
+train_r: 0.126435841884
+train_f: 0.214998204293
+train_f05: 0.370860344841
+train_accuracy: 0.879889104951
+train_token_count: 564137
+train_time: 94.7812330723
+dev_cost_avg: 1.36395598239
+dev_cost_sum: 47191.5130348
+dev_main_predicted_count: 762
+dev_main_total_count: 4640
+dev_main_correct_count: 617
+dev_p: 0.809711286089
+dev_r: 0.132974137931
+dev_f: 0.228433913365
+dev_f05: 0.40127471384
+dev_accuracy: 0.879534090581
+dev_token_count: 34599
+dev_time: 3.31152296066
+Saving...
+Epoch:0	mini-batch:3
+train_cost_avg: 1.39524419416
+train_cost_sum: 788082.75441
+train_main_predicted_count: 16336
+train_main_total_count: 73369
+train_main_correct_count: 11970
+train_p: 0.732737512243
+train_r: 0.16314792351
+train_f: 0.266874756145
+train_f05: 0.43146640906
+train_accuracy: 0.883567767578
+train_token_count: 564835
+train_time: 98.0981559753
+dev_cost_avg: 1.35153243568
+dev_cost_sum: 46761.670742
+dev_main_predicted_count: 837
+dev_main_total_count: 4640
+dev_main_correct_count: 683
+dev_p: 0.816009557945
+dev_r: 0.147198275862
+dev_f: 0.249406609458
+dev_f05: 0.427516274412
+dev_accuracy: 0.881181537039
+dev_token_count: 34599
+dev_time: 3.36888504028
+Saving...
+Epoch:0	mini-batch:4
+('Unexpected error:', <type 'exceptions.RuntimeError'>)
+Caught exception, exiting training, attempting to run tests...
+Loading best model and running tests...

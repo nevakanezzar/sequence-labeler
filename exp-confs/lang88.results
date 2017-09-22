@@ -1,0 +1,134 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv,/home/skasewa/stuff/project/data/exp-data/train/lang8/lang8-train.tsv
+multiple :  4
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  1
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  50
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1.0
+opt_strategy :  adadelta
+max_batch_size :  128
+save :  /home/skasewa/stuff/project/models/downstream/lang88.model
+load :  None
+random_seed :  420
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  86006
+n_chars :  77
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  28462504
+parameter_count_without_word_embeddings:  2660704
+EPOCH: 0
+learningrate: 1.0
+Epoch:0	mini-batch:0
+train_cost_avg: 1.6879721751
+train_cost_sum: 3387670.6929
+train_main_predicted_count: 55867
+train_main_total_count: 403338
+train_main_correct_count: 35078
+train_p: 0.627884081837
+train_r: 0.0869692416782
+train_f: 0.152777082131
+train_f05: 0.279815445289
+train_accuracy: 0.806148841997
+train_token_count: 2006947
+train_time: 414.23003006
+dev_cost_avg: 1.37044483514
+dev_cost_sum: 47416.0208511
+dev_main_predicted_count: 834
+dev_main_total_count: 4640
+dev_main_correct_count: 665
+dev_p: 0.797362110312
+dev_r: 0.143318965517
+dev_f: 0.242966751918
+dev_f05: 0.416875626881
+dev_accuracy: 0.880227752247
+dev_token_count: 34599
+dev_time: 3.54539012909
+Saving...
+Epoch:0	mini-batch:1
+('Unexpected error:', <type 'exceptions.RuntimeError'>)
+Caught exception, exiting training, attempting to run tests...
+Loading best model and running tests...
+test0_cost_avg: 1.37044483514
+test0_cost_sum: 47416.0208511
+test0_main_predicted_count: 834
+test0_main_total_count: 4640
+test0_main_correct_count: 665
+test0_p: 0.797362110312
+test0_r: 0.143318965517
+test0_f: 0.242966751918
+test0_f05: 0.416875626881
+test0_accuracy: 0.880227752247
+test0_token_count: 34599
+test0_time: 3.22395086288
+test1_cost_avg: 1.48889379296
+test1_cost_sum: 61754.8478508
+test1_main_predicted_count: 1209
+test1_main_total_count: 6305
+test1_main_correct_count: 924
+test1_p: 0.764267990074
+test1_r: 0.14655035686
+test1_f: 0.245940910301
+test1_f05: 0.414684498699
+test1_accuracy: 0.863394170263
+test1_token_count: 41477
+test1_time: 3.51142001152
+test2_cost_avg: 1.61956977633
+test2_cost_sum: 48820.3113377
+test2_main_predicted_count: 560
+test2_main_total_count: 2992
+test2_main_correct_count: 218
+test2_p: 0.389285714286
+test2_r: 0.0728609625668
+test2_f: 0.122747747748
+test2_f05: 0.208333333333
+test2_accuracy: 0.896629511677
+test2_token_count: 30144
+test2_time: 3.00206398964
+test3_cost_avg: 1.65920477566
+test3_cost_sum: 50015.0687575
+test3_main_predicted_count: 560
+test3_main_total_count: 4199
+test3_main_correct_count: 312
+test3_p: 0.557142857143
+test3_r: 0.0743034055728
+test3_f: 0.13111998319
+test3_f05: 0.242273644976
+test3_accuracy: 0.862825106157
+test3_token_count: 30144
+test3_time: 3.09375810623
+test4_cost_avg: 1.56319789963
+test4_cost_sum: 105059.404438
+test4_main_predicted_count: 3027
+test4_main_total_count: 15125
+test4_main_correct_count: 2094
+test4_p: 0.691774033697
+test4_r: 0.138446280992
+test4_f: 0.23071837814
+test4_f05: 0.384460030111
+test4_accuracy: 0.79222711582
+test4_token_count: 67208
+test4_time: 8.00206899643

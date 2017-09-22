@@ -2,14 +2,11 @@ import sys
 import theano
 import numpy
 import collections
+import cPickle
 import lasagne
+
 import crf
 import recurrence
-
-try:
-    import cPickle as pickle
-except:
-    import pickle
 
 sys.setrecursionlimit(50000)
 floatX=theano.config.floatX
@@ -103,7 +100,7 @@ class SequenceLabeler(object):
             predicted_labels = theano.tensor.argmax(output_probs, axis=2)
             cost += theano.tensor.nnet.categorical_crossentropy(output_probs_, label_ids.reshape((-1,))).sum()
 
-        gradients = theano.tensor.grad(cost, list(self.params.values()), disconnected_inputs='ignore')
+        gradients = theano.tensor.grad(cost, self.params.values(), disconnected_inputs='ignore')
         if config["opt_strategy"] == "adadelta":
             updates = lasagne.updates.adadelta(gradients, self.params.values(), learningrate)
         elif config["opt_strategy"] == "adam":
@@ -137,13 +134,13 @@ class SequenceLabeler(object):
 
     def get_parameter_count(self):
         total = 0
-        for key, val in self.params.items():
+        for key, val in self.params.iteritems():
             total += val.get_value().size
         return total
 
     def get_parameter_count_without_word_embeddings(self):
         total = 0
-        for key, val in self.params.items():
+        for key, val in self.params.iteritems():
             if val == self.word_embeddings:
                 continue
             total += val.get_value().size
@@ -155,17 +152,17 @@ class SequenceLabeler(object):
         dump["params"] = {}
         for param_name in self.params:
             dump["params"][param_name] = self.params[param_name].get_value()
-        with open(filename, 'wb') as f:
-            pickle.dump(dump, f, protocol=pickle.HIGHEST_PROTOCOL)
+        f = file(filename, 'wb')
+        cPickle.dump(dump, f, protocol=cPickle.HIGHEST_PROTOCOL)
+        f.close()
 
     @staticmethod
     def load(filename):
-        sequencelabeler = None
-        with open(filename, 'rb') as f:
-            dump = pickle.load(f)
-            sequencelabeler = SequenceLabeler(dump["config"])
-            for param_name in sequencelabeler.params:
-                assert(param_name in dump["params"])
-                sequencelabeler.params[param_name].set_value(dump["params"][param_name])
+        f = file(filename, 'rb')
+        dump = cPickle.load(f)
+        f.close()
+        sequencelabeler = SequenceLabeler(dump["config"])
+        for param_name in sequencelabeler.params:
+            assert(param_name in dump["params"])
+            sequencelabeler.params[param_name].set_value(dump["params"][param_name])
         return sequencelabeler
-

@@ -1,0 +1,39 @@
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e41.conf > e41.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e42.conf > e42.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e43.conf > e43.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e44.conf > e44.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e45.conf > e45.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e46.conf > e46.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e47.conf > e47.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e48.conf > e48.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e49.conf > e49.results
+
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e51.conf > e51.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e52.conf > e52.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e53.conf > e53.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e54.conf > e54.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e55.conf > e55.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e56.conf > e56.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e57.conf > e57.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e58.conf > e58.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e59.conf > e59.results
+
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e61.conf > e61.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e62.conf > e62.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e63.conf > e63.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e64.conf > e64.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e65.conf > e65.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e66.conf > e66.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e67.conf > e67.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e68.conf > e68.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e69.conf > e69.results
+
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e71.conf > e71.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e72.conf > e72.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e73.conf > e73.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e74.conf > e74.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e75.conf > e75.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e76.conf > e76.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e77.conf > e77.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e78.conf > e78.results
+THEANO_FLAGS='device=gpu2,floatX=float32' python ../sequence-labeler-master/v2_sle_mixeddata.py e79.conf > e79.results

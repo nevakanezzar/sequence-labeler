@@ -1,0 +1,233 @@
+path_train :  /home/skasewa/stuff/project/data/exp-data/train/fce/fce-public.train.original.tsv
+multiple :  1
+path_dev :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv
+path_test :  /home/skasewa/stuff/project/data/exp-data/dev/fce/fce-public.dev.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/fce/fce-public.test.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test0/nucle.test0.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/conll14-test1/nucle.test1.original.tsv:/home/skasewa/stuff/project/data/exp-data/test/lang8/lang8-test.tsv
+main_label :  i
+conll_eval :  False
+lowercase_words :  True
+lowercase_chars :  False
+replace_digits :  True
+min_word_freq :  1
+use_singletons :  False
+allowed_word_length :  -1.0
+preload_vectors :  /home/skasewa/stuff/project/data/googlenews-vectors/GoogleNews-vectors-negative300.txt
+word_embedding_size :  300
+char_embedding_size :  50
+word_recurrent_size :  200
+char_recurrent_size :  200
+narrow_layer_size :  50
+dropout_input :  0.5
+best_model_selector :  dev_f05:high
+epochs :  100
+stop_if_no_improvement_for_epochs :  10
+learningrate :  1
+opt_strategy :  adadelta
+max_batch_size :  512
+save :  /home/skasewa/stuff/project/models/downstream/baseline-run7.model
+load :  None
+random_seed :  2772
+crf_on_top :  False
+char_integration_method :  attention
+garbage_collection :  False
+lmcost_gamma :  0.1
+lmcost_layer_size :  50
+lmcost_max_vocab_size :  10000
+n_words :  12072
+n_chars :  64
+n_labels :  2
+n_singletons :  0
+unk_token :  <unk>
+unk_token_id :  0
+parameter_count:  6281654
+parameter_count_without_word_embeddings:  2660054
+EPOCH: 0
+learningrate: 1
+train_cost_avg: 2.10617126214
+train_cost_sum: 953743.851151
+train_main_predicted_count: 4599
+train_main_total_count: 58897
+train_main_correct_count: 497
+train_p: 0.108066971081
+train_r: 0.00843846036301
+train_f: 0.0156545294192
+train_f05: 0.0321503887804
+train_accuracy: 0.861975606901
+train_token_count: 452833
+train_time: 205.535759211
+dev_cost_avg: 1.93243899233
+dev_cost_sum: 66860.4566956
+dev_main_predicted_count: 0
+dev_main_total_count: 4640
+dev_main_correct_count: 0
+dev_p: 0.0
+dev_r: 0.0
+dev_f: 0.0
+dev_f05: 0.0
+dev_accuracy: 0.865892077806
+dev_token_count: 34599
+dev_time: 3.99004912376
+best_epoch: 0
+EPOCH: 1
+learningrate: 1
+train_cost_avg: 1.79390099609
+train_cost_sum: 812337.569763
+train_main_predicted_count: 119
+train_main_total_count: 58897
+train_main_correct_count: 31
+train_p: 0.260504201681
+train_r: 0.000526342598095
+train_f: 0.00105056255931
+train_f05: 0.00261061425227
+train_accuracy: 0.869810724925
+train_token_count: 452833
+train_time: 129.960883141
+dev_cost_avg: 1.6589569098
+dev_cost_sum: 57398.2501221
+dev_main_predicted_count: 45
+dev_main_total_count: 4640
+dev_main_correct_count: 32
+dev_p: 0.711111111111
+dev_r: 0.00689655172414
+dev_f: 0.0136606189968
+dev_f05: 0.0331950207469
+dev_accuracy: 0.866441226625
+dev_token_count: 34599
+dev_time: 3.98929810524
+best_epoch: 1
+EPOCH: 2
+learningrate: 1
+train_cost_avg: 1.59706729615
+train_cost_sum: 723204.774918
+train_main_predicted_count: 6821
+train_main_total_count: 58897
+train_main_correct_count: 4617
+train_p: 0.676880222841
+train_r: 0.0783910895292
+train_f: 0.140509449466
+train_f05: 0.267866467087
+train_accuracy: 0.875265274395
+train_token_count: 452833
+train_time: 152.855815887
+dev_cost_avg: 1.52697548921
+dev_cost_sum: 52831.8249512
+dev_main_predicted_count: 969
+dev_main_total_count: 4640
+dev_main_correct_count: 651
+dev_p: 0.671826625387
+dev_r: 0.140301724138
+dev_f: 0.232126938848
+dev_f05: 0.382221700329
+dev_accuracy: 0.875516633429
+dev_token_count: 34599
+dev_time: 13.6174969673
+best_epoch: 2
+EPOCH: 3
+learningrate: 1
+train_cost_avg: 1.47369287302
+train_cost_sum: 667336.764771
+train_main_predicted_count: 10812
+train_main_total_count: 58897
+train_main_correct_count: 8406
+train_p: 0.777469478357
+train_r: 0.142723738051
+train_f: 0.24117402344
+train_f05: 0.411473885163
+train_accuracy: 0.883186516884
+train_token_count: 452833
+train_time: 232.354452848
+dev_cost_avg: 1.4326660446
+dev_cost_sum: 49568.8124771
+dev_main_predicted_count: 888
+dev_main_total_count: 4640
+dev_main_correct_count: 656
+dev_p: 0.738738738739
+dev_r: 0.141379310345
+dev_f: 0.237337192475
+dev_f05: 0.400390625
+dev_accuracy: 0.878146767248
+dev_token_count: 34599
+dev_time: 12.4746451378
+best_epoch: 3
+EPOCH: 4
+learningrate: 1
+train_cost_avg: 1.40226854296
+train_cost_sum: 634993.471115
+train_main_predicted_count: 12846
+train_main_total_count: 58897
+train_main_correct_count: 9949
+train_p: 0.77448232913
+train_r: 0.168922016402
+train_f: 0.277351100456
+train_f05: 0.451074981184
+train_accuracy: 0.885509669127
+train_token_count: 452833
+train_time: 227.892022133
+dev_cost_avg: 1.37456249075
+dev_cost_sum: 47558.4876175
+dev_main_predicted_count: 1320
+dev_main_total_count: 4640
+dev_main_correct_count: 892
+dev_p: 0.675757575758
+dev_r: 0.19224137931
+dev_f: 0.29932885906
+dev_f05: 0.449596774194
+dev_accuracy: 0.879302870025
+dev_token_count: 34599
+dev_time: 12.9399330616
+best_epoch: 4
+EPOCH: 5
+learningrate: 1
+train_cost_avg: 1.34333129187
+train_cost_sum: 608304.738892
+train_main_predicted_count: 15376
+train_main_total_count: 58897
+train_main_correct_count: 11986
+train_p: 0.77952653486
+train_r: 0.203507818734
+train_f: 0.322755240801
+train_f05: 0.497753340919
+train_accuracy: 0.888919314626
+train_token_count: 452833
+train_time: 220.861638069
+dev_cost_avg: 1.37944653876
+dev_cost_sum: 47727.4707947
+dev_main_predicted_count: 449
+dev_main_total_count: 4640
+dev_main_correct_count: 389
+dev_p: 0.866369710468
+dev_r: 0.0838362068966
+dev_f: 0.152878758106
+dev_f05: 0.302206339341
+dev_accuracy: 0.875401023151
+dev_token_count: 34599
+dev_time: 13.7901039124
+best_epoch: 4
+EPOCH: 6
+learningrate: 1
+train_cost_avg: 1.30274129758
+train_cost_sum: 589924.250008
+train_main_predicted_count: 16993
+train_main_total_count: 58897
+train_main_correct_count: 13331
+train_p: 0.784499499794
+train_r: 0.226344295974
+train_f: 0.35132428515
+train_f05: 0.525384451679
+train_accuracy: 0.891288841582
+train_token_count: 452833
+train_time: 218.221476793
+dev_cost_avg: 1.31455371001
+dev_cost_sum: 45482.2438126
+dev_main_predicted_count: 1388
+dev_main_total_count: 4640
+dev_main_correct_count: 960
+dev_p: 0.691642651297
+dev_r: 0.206896551724
+dev_f: 0.318513603185
+dev_f05: 0.470957613815
+dev_accuracy: 0.881268244747
+dev_token_count: 34599
+dev_time: 14.4400658607
+best_epoch: 6
+EPOCH: 7
+learningrate: 1
